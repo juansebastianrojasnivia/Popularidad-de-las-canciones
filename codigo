@@ -1,0 +1,8 @@
+import pandas as pd
+nombre_arch1 = '1950.csv'
+try:
+    df = pd.read_csv(nombre_arch1)
+    print(f"--- Contenido de '{nombre_arch1}' ---")
+    print(df)
+except FileNotFoundError:
+    print(f"--- El archivo '{nombre_arch1}' no fue encontrado ---")
